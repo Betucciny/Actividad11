@@ -9,6 +9,7 @@ function limpiar(){
 function cambioNormal(event){
     const caja = event.currentTarget.parentElement;
     caja.classList.remove("error");
+    event.currentTarget.removeEventListener('change', cambioNormal);
 }
 
 function SubmitQ(event){
